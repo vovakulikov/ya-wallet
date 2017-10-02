@@ -1,17 +1,11 @@
-
 import React from 'react';
-import Layout from './components/layout';
-import User from './components/user';
+import ReactDOM from 'react-dom';
+import {App} from './components';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1> Hello World react people</h1>
-        <Layout />
-        <User name="Vova" />
-      </div>
-    );
-  }
+//ReactDOM.render(<App />, document.getElementById('root'));
 
+export default class WrapApp extends React.Component {
+	render() {
+		return (<App />)
+	}
 }

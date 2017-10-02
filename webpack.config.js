@@ -18,57 +18,58 @@ const gzip = require('./webpack/gzip');
 const preactCompact = require('./webpack/preact-compact');
 
 const PATHS = {
-  src: path.join(__dirname, 'source/client'),
-  build: path.join(__dirname, 'dist'),
+	src: path.join(__dirname, 'source/client'),
+	build: path.join(__dirname, 'dist'),
 };
 
 const common = merge([
-  {
-    entry: {
-      index: [
-        'react-hot-loader/patch',
-        `${PATHS.src}/index.js`],
-      vendor: ['react', 'react-dom'],
-    },
-    output: {
-      path: PATHS.build,
-      filename: 'js/[name].[hash].js',
-    },
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: `${PATHS.src}/index.html`,
-        filename: 'index.html',
-        inject: 'body',
-      }),
-      new webpack.optimize.CommonsChunkPlugin({
-        names: ['vendor', 'manifest'], // Specify the common bundle's name.
-      }),
-    ],
+	{
+		entry: {
+			index: [
+				'react-hot-loader/patch',
+				`${PATHS.src}/index.js`],
+			vendor: ['react', 'react-dom'],
+		},
+		output: {
+			//path: PATHS.build,
+			path: path.resolve(__dirname, 'public'),
+			filename: 'js/[name].[hash].js',
+		},
+		plugins: [
+			new HtmlWebpackPlugin({
+				template: `${PATHS.src}/index.html`,
+				filename: 'index.html',
+				inject: 'body',
+			}),
+			new webpack.optimize.CommonsChunkPlugin({
+				names: ['vendor', 'manifest'], // Specify the common bundle's name.
+			}),
+		],
 
-  },
-  es6(),
+	},
+	es6(),
   // pug(),
-  images(),
+	images(),
   // uglifyJS(),
 ]);
 
 module.exports = function (env) {
-  if (env === 'production') {
-    return merge([
-      common,
-      preactCompact(),
-      gzip(),
-      definePROD(),
-      extractCSS(),
-      uglifyJS(),
-    ]);
-  }
-  if (env === 'development') {
-    return merge([
-      common,
-      devserver(),
-      sass(),
-      css(),
-    ]);
-  }
+	if (env === 'production') {
+		return merge([
+			common,
+			//preactCompact(),
+			gzip(),
+			definePROD(),
+			extractCSS(),
+			uglifyJS(),
+		]);
+	}
+	if (env === 'development') {
+		return merge([
+			common,
+			devserver(),
+			sass(),
+			css(),
+		]);
+	}
 };
