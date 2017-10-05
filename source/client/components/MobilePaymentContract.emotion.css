@@ -1,0 +1,53 @@
+.styled-MobilePaymentLayout-c665z1 {
+    width: 440px;
+    background: #108051
+}
+.styled-MobilePaymentTitle-mj2hg5 {
+    color: #fff
+}
+.styled-InputField-fi9q3p {
+    display: -webkit-box; display: -ms-flexbox; display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 26px;
+    position: relative;
+    padding-left: 150px
+}
+.styled-Label-y9j6m7 {
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    left: 0
+}
+.styled-Currency-15vy3i9 {
+    font-size: 13px;
+    color: #fff;
+    margin-left: 12px
+}
+.styled-Commission-s5vqlu {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    text-align: right;
+    margin: 35px 0 20px
+}
+.styled-Underline-1a9f28y {
+    height: 1px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.16)
+}
+.styled-PaymentButton-iux8w4 {
+    float: right
+}
+.styled-InputPhoneNumber-8lwo63 {
+    width: 225px
+}
+.styled-InputSum-1l11rgu {
+    width: 160px
+}
+.styled-InputCommision-12y6i67 {
+    cursor: no-drop;
+    width: 160px;
+    border: dotted 1.5px rgba(0, 0, 0, 0.2);
+    background-color: initial
+}

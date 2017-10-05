@@ -1,0 +1,44 @@
+.styled-HistoryLayout-pg18s2 {
+    width: 530px;
+    max-height: 622px;
+    overflow-y: scroll;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.05)
+}
+.styled-HistoryTitle-1fkwykz {
+    padding-left: 12px;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 15px;
+    line-height: 30px;
+    text-transform: uppercase
+}
+.styled-HistoryItem-1g72236 {
+    display: -webkit-box; display: -ms-flexbox; display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 74px;
+    font-size: 15px;
+    white-space: nowrap
+}
+.styled-HistoryItem-1g72236:nth-child(even) {
+    background-color: #fff
+}
+.styled-HistoryItem-1g72236:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.72)
+}
+.styled-HistoryItemTitle-3ubkjg {
+    width: 290px;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+.styled-HistoryItemTime-1idqrzg {
+    width: 50px
+}
+.styled-HistoryItemSum-1sv52qs {
+    width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis
+}

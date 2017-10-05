@@ -1,0 +1,61 @@
+.styled-MobilePaymentLayout-p7qoyk {
+    width: 440px;
+    background: #108051;
+    position: relative;
+    color: #fff
+}
+.styled-SuccessIcon-ijz6r6 {
+    width: 48px;
+    height: 48px;
+    background-image: url(/assets/round-check.svg);
+    position: absolute;
+    top: 27;
+    right: 32
+}
+.styled-Header-290q6i {
+    font-size: 24px
+}
+.styled-Sum-17i8jc3 {
+    font-size: 48px
+}
+.styled-CommissionTips-15hhygf {
+    font-size: 13px;
+    opacity: 0.6;
+    margin-bottom: 20px
+}
+.styled-Section-imzz5k {
+    position: relative;
+    padding-left: 160px;
+    margin-bottom: 20px
+}
+.styled-SectionLabel-qosqy8 {
+    font-size: 15px;
+    position: absolute;
+    left: 0px
+}
+.styled-SectionValue-2a7g9i {
+    font-size: 15px
+}
+.styled-Instruction-kv7zae {
+    margin-bottom: 40px;
+    font-size: 15px
+}
+.styled-RepeatPayment-1j1la9x {
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.08);
+    height: 42px;
+    display: -webkit-box; display: -ms-flexbox; display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    text-transform: uppercase
+}

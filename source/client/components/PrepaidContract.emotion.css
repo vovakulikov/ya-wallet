@@ -1,0 +1,36 @@
+.styled-PrepaidLayout-lk08tg {
+    width: 350px;
+    display: -webkit-box; display: -ms-flexbox; display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #353536
+}
+.styled-PrepaidTitle-mj2hg5 {
+    color: #fff
+}
+.styled-PrepaidItems-xh2gwk {
+    width: 285px;
+    margin-bottom: 40px
+}
+.styled-InputField-1xtf4zu {
+    margin: 20px 0;
+    position: relative
+}
+.styled-SumInput-8af47l {
+    max-width: 200px;
+    padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #fff
+}
+.styled-Currency-16maa8x {
+    font-size: 12px;
+    position: absolute;
+    right: 10;
+    top: 8px;
+    color: #fff
+}

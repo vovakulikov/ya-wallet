@@ -1,0 +1,56 @@
+.styled-PrepaidLayout-1bk3nfi {
+    width: 350px;
+    display: -webkit-box; display: -ms-flexbox; display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #353536;
+    position: relative;
+    color: #fff
+}
+.styled-CheckIcom-10tay3g {
+    width: 48px;
+    height: 48px;
+    background-image: url(/assets/round-check.svg);
+    position: absolute;
+    top: 14;
+    right: 20
+}
+.styled-Header-mj2hg5 {
+    color: #fff
+}
+.styled-SectionGroup-2998cc {
+    margin-bottom: 20px
+}
+.styled-Section-1h064j3 {
+    margin-bottom: 20px;
+    width: 100%
+}
+.styled-SectionLabel-mgtdvw {
+    font-size: 13px;
+    text-align: left
+}
+.styled-SectionValue-13a3xx5 {
+    font-size: 13px;
+    letter-spacing: 0.6px
+}
+.styled-RepeatPayment-1j1la9x {
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.08);
+    height: 42px;
+    display: -webkit-box; display: -ms-flexbox; display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    text-transform: uppercase
+}

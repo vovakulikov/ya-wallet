@@ -1,0 +1,21 @@
+.styled-HeaderLayout-1v392gp {
+    display: -webkit-box; display: -ms-flexbox; display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 74px;
+    background: #fff;
+    padding: 20px 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06)
+}
+.styled-Balance-eh7lb7 {
+    margin: 0
+}
+.styled-BalanceSum-1378exm {
+    font-weight: bold
+}
