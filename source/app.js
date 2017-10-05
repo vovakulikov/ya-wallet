@@ -40,8 +40,10 @@ router.param('id', (id, ctx, next) => next());
 router.get('/', async (ctx) => {
 	// extractCritical не работает на динамичных стилях;
 	const { html, ids, css } = extractCritical(renderToString(<App/>));
+	console.log(css, ids)
 	await ctx.render('index', {
-		ssrContent: html
+		ssrContent: html,
+		css: css
 	});
 });
 

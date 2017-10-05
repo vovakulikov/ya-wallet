@@ -1,5 +1,6 @@
 
 const path = require('path');
+const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const merge = require('webpack-merge');
 const devserver = require('./webpack/devServer');
@@ -18,6 +19,17 @@ const PATHS = {
 	src: path.join(__dirname, 'source/client'),
 	build: path.join(__dirname, 'dist'),
 };
+
+function getExternals() {
+	return fs.readdirSync('node_modules')
+		.concat(['react-dom/server'])
+		.filter((mod) => mod !== '.bin')
+		.reduce((externals, mod) => {
+			externals[mod] = `commonjs ${mod}`;
+			return externals;
+		}, {});
+}
+
 
 const common = merge([
 	{
@@ -51,6 +63,7 @@ const common = merge([
 const serverReact = merge([
 	{
 		target: 'node',
+		externals: getExternals(),
 		entry: `${PATHS.src}/components/App.js`,
 		output: {
 			path: path.resolve(__dirname, 'public'),
@@ -60,11 +73,25 @@ const serverReact = merge([
 		},
 		module: {
 			rules: [
-				{ test: /\.css$/, use: 'ignore-loader' }
+				{
+					test: /\.js$/,
+					exclude: /node_modules/,
+					loader: 'babel-loader',
+					options: {
+						presets: ["env", "es2015", "react"],
+						plugins: [
+							"emotion",
+							["import", {libraryName: "antd", style: "css"}]
+						],
+					}
+				},
+				{
+					test: /\.css$/,
+					loader: 'ignore-loader'
+				}
 			]
 		}
 	},
-	es6(),
 	definePROD()
 ]);
 
