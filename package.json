@@ -4,9 +4,15 @@
   "description": "Приложение школы Node.js «Кошелёк»",
   "author": "",
   "scripts": {
+	// Запуск сервера приложения
     "start": "NODE_PATH=. babel-node ./source/app.js --presets es2015,react",
+
+	// Запуск localhostА дев сборки клиента
     "serve:client": "./node_modules/.bin/webpack-dev-server --progress --inline --hot --env development",
+
+	// Запуск прод сборки клиента и билда для SSR
     "build:client": "NODE_PATH=. ./node_modules/.bin/webpack --env production",
+
     "watch": "NODE_PATH=. nodemon --watch source ./source/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "./node_modules/.bin/eslint ./source"
